@@ -1279,9 +1279,10 @@
             </div>
 
             <div class="footer-bottom">
-                <p>&copy; 2025 MD. Shaheen Alam Jony. All rights reserved.</p>
+                <p>&copy; <span id="year"></span> MD. Shaheen Alam Jony. All rights reserved.</p>
                 <p>Dhaka, Bangladesh</p>
-            </div>
+              </div>
+              
         </div>
     </footer>
 
@@ -1306,6 +1307,10 @@
                 navLinks.classList.remove('active');
             }
         });
+        
+        const year = new Date().getFullYear();
+        document.getElementById("year").textContent = year;
+
     </script>
 </body>
 </html>
